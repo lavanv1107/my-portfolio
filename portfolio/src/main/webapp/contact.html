@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vee's Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="preloader"><img src="images\eevee.gif"></div>
+
+	<div class="side_nav_menu">
+		<button id="side-nav-toggle" onclick="openNav()"><img src="https://img.icons8.com/bubbles/50/000000/menu.png"/></button>
+		<div id="side-nav-menu" class="side-nav-menu">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index.html">Home</a>
+		  <br>
+		  <a href="about.html">About</a>
+		  <br>
+		  <a href="skills.html">Skills</a>
+		  <br>
+		  <a href="interests.html">Interests</a>
+		  <br>
+		  <a href="contact.html">Contact</a>
+
+		  <div class="mode-toggle">
+		  	<button id="dark-toggle" onclick="darkMode()"><h1>🌛</h1></button>
+		  </div>
+		</div>
+	</div>
+
+	<div id="main">
+		<div>
+			<h1>Contact Me! ☜(ˆ▿ˆc)</h1>
+            <h3>Here's my email: vatanaklavan@gmail.com</h3>
+			<p>Or shoot me a message right here and I'll get back to you in 7 business days.</p>
+		</div>
+
+		<form action="/form-handler" method="POST">
+      		<p>Name</p> <input type="text" name="name">
+      		<p>Email</p> <input type="text" name="email">
+      		<p>Phone</p> <input type="text" name="phone">
+      		<p>Message</p><textarea name="message" rows="6" cols="25"></textarea>
+      		<br />
+      		<input type="submit" value="Send">
+      		<input type="reset" value="Clear">
+    	</form>
+	</div>
+
+	
+			
+
+	<script src="script.js"></script>
+</body>
+</html>
