@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>Vee's Portfolio</h1>
-      <p>Hi! My name is Vee.</p>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a special hello message:</p>
-      <button onclick="showMessage()">Click me</button>
-      <p id="message-box"></p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random quote:</p>
-      <button onclick="addRandomGreeting()">Quote of the Day</button>
-      <div id="greeting-container"></div>
-      <img src= "/images/dariagrad.jpg" />
-    </div>
-    <form action="/form-handler" method="POST">
-      <p>Name</p> <input type="text" name="name">
-      <p>Email</p> <input type="text" name="email">
-      <p>Message</p><textarea name="message" rows="6" cols="25"></textarea>
-      <br />
-      <input type="submit" value="Send">
-      <input type="reset" value="Clear">
-    </form>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<title>Vee's Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="preloader"><img src="images\eevee.gif"></div>
+
+	<div class="side_nav_menu">
+		<button id="side-nav-toggle" onclick="openNav()"><img src="https://img.icons8.com/bubbles/50/000000/menu.png"/></button>
+
+		<div id="side-nav-menu" class="side-nav-menu">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index.html">Home</a>
+		  <br>
+		  <a href="about.html">About</a>
+		  <br>
+		  <a href="skills.html">Skills</a>
+		  <br>
+		  <a href="interests.html">Interests</a>
+		  <br>
+		  <a href="contact.html">Contact</a>
+
+		  <div class="mode-toggle">
+		  	<button id="dark-toggle" onclick="darkMode()"><h1>🌛</h1></button>
+		  </div>
+		</div>
+	</div>
+
+	<div id="main">
+		<h1>Hi! My name's Vee.</h1>
+		<h2>Welcome to my website!</h2>
+		<div id="home-content">
+			<h3>And here's an obligatory quote from a book I picked up but never finished reading to showcase my superior intellect ✍(◔◡◔)</h3>
+			<p>The most important thing I learned on Tralfamadore was that when a person dies he only appears to die. He is still very much alive in the past, so it is very silly for people to cry at his funeral. All moments, past, present and future, always have existed, always will exist. The Tralfamadorians can look at all the different moments just that way we can look at a stretch of the Rocky Mountains, for instance. They can see how permanent all the moments are, and they can look at any moment that interests them. It is just an illusion we have here on Earth that one moment follows another one, like beads on a string, and that once a moment is gone it is gone forever.</p>
+			<p>- Slaughterhouse Five, Kurt Vonnegut</p>
+		</div>
+		
+	</div>
+
+	
+			
+
+	<script src="script.js"></script>
+</body>
 </html>
