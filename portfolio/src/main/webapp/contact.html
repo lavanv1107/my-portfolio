@@ -11,7 +11,6 @@
 
 	<div class="side_nav_menu">
 		<button id="side-nav-toggle" onclick="openNav()"><img src="https://img.icons8.com/bubbles/50/000000/menu.png"/></button>
-
 		<div id="side-nav-menu" class="side-nav-menu">
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <a href="index.html">Home</a>
@@ -31,14 +30,21 @@
 	</div>
 
 	<div id="main">
-		<h1>Hi! My name's Vee.</h1>
-		<h2>Welcome to my website!</h2>
-		<div id="home-content">
-			<h3>And here's an obligatory quote from a book I picked up but never finished reading to showcase my superior intellect ✍(◔◡◔)</h3>
-			<p>The most important thing I learned on Tralfamadore was that when a person dies he only appears to die. He is still very much alive in the past, so it is very silly for people to cry at his funeral. All moments, past, present and future, always have existed, always will exist. The Tralfamadorians can look at all the different moments just that way we can look at a stretch of the Rocky Mountains, for instance. They can see how permanent all the moments are, and they can look at any moment that interests them. It is just an illusion we have here on Earth that one moment follows another one, like beads on a string, and that once a moment is gone it is gone forever.</p>
-			<p>- Slaughterhouse Five, Kurt Vonnegut</p>
+		<div>
+			<h1>Contact Me! ☜(ˆ▿ˆc)</h1>
+            <h3>Here's my email: vatanaklavan@gmail.com</h3>
+			<p>Or shoot me a message right here and I'll get back to you in 7 business days.</p>
 		</div>
-		
+
+		<form action="/form-handler" method="POST">
+      		<p>Name</p> <input type="text" name="name">
+      		<p>Email</p> <input type="text" name="email">
+      		<p>Phone</p> <input type="text" name="phone">
+      		<p>Message</p><textarea name="message" rows="6" cols="25"></textarea>
+      		<br />
+      		<input type="submit" value="Send">
+      		<input type="reset" value="Clear">
+    	</form>
 	</div>
 
 	
