@@ -1,9 +1,130 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+@font-face{
+  font-family: PokemonGB;
+  src: url(fonts/PokemonGB.ttf);
 }
 
-#greeting-container {
-  margin-top: 20px;
+/*** Main Page ***/
+body{
+  background-image: url("images/day.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: PokemonGB;
+  line-height: 2;
 }
+
+/*** Preloader ***/
+.preloader{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.disappear{
+	animation: vanish 1s forwards;
+}
+
+@keyframes vanish{
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+/*** Side Navigation Menu ***/
+/** Menu Toggle **/
+#side-nav-toggle{
+	background-color: lightcyan;
+	border: lightcoral solid;
+	cursor: pointer;
+}
+
+#side-nav-toggle:hover{
+	background-color: lightcoral;
+}
+
+/** Menu **/
+.side-nav-menu {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/** Links **/
+.side-nav-menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.side-nav-menu a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.side-nav-menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/** Mode Toggle **/
+#dark-toggle{
+	background-color: white;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+	border: none;
+	cursor: pointer;
+}
+
+.dark-mode{
+  background-image: url("images/night.png");
+  color: white;
+}
+
+/*** Home Section ***/
+#home-content {
+  width: 1000px;
+}
+
+/*** About Section ***/
+#about-content {
+  width: 1000px;
+}
+
+/*** Skills Section ***/
+.skills-content {
+  width: 1000px;
+}
+
+/*** Interests Section ***/
+
+
+/*** Contact Section ***/
+input, textarea {
+  font-family: PokemonGB;
+}
+
+
